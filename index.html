@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREDICTION MASTER</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .porductn_master {
+        background: url(./image/01291c2c-a147-45c4-8b79-02eb79149cdb.jfif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+
+    @media screen and (max-width:992px) {
+        .porductn_master {
+            width: 100%;
+        }
+    }
+
+    .banner-content {
+        text-align: center;
+        color: white;
+        background: rgba(222, 218, 218, 0.134);
+        width: 100%;
+        height: 100vh;
+    }
+
+    .banner-content h1 {
+        font-size: 18px;
+        width: 75%;
+        padding: 5px;
+        margin: 20px auto;
+        /* < !-- background: rgba(97, 122, 137, 0.3);
+        --> */
+    }
+
+    .banner-content h3 {
+        font-size: 15px;
+        width: 75%;
+        margin: 16px auto;
+        padding: 5px;
+        display: inline-block;
+    }
+
+    .bottom-content {
+        margin-top: 7rem;
+    }
+
+    .banner-content ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner-content ul li {
+        list-style: none;
+        background: black;
+        color: white;
+        padding: 13px 30px;
+        font-size: 18px;
+        width: 82%;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(222, 218, 218, 0.19), 0 6px 6px rgba(202, 198, 198, 0.23);
+    }
+
+    @media screen and (max-width:992px) {
+        .banner-content ul li {
+            padding: 8px 30px;
+            font-size: 16px;
+        }
+    }
+
+    .banner-content ul li:hover {
+        text-decoration: underline;
+    }
+
+    .owener-name a {
+        color: white;
+        text-decoration: none;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .owener-name a:hover {
+        text-decoration: underline;
+    }
+
+    .circle-container {
+        display: flex;
+        width: 65%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .telageram a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        padding: 16px;
+        background-color: #9b9fa6;
+        text-decoration: none;
+        border-radius: 15px;
+        margin: 0 auto;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+        color: white;
+        border: 2px solid #ffff;
+        position: relative;
+    }
+
+    .telageram a:hover {
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width:992px) {
+        .telageram a {
+            width: 270px;
+            font-size: 16px;
+            padding: 8px;
+        }
+     
+    }
+    .PREDICTION-star{
+            padding-top: 20px;
+        }   
+</style>
+
+<body>
+    <div class="porductn_master">
+        <div  class="banner-content">
+            <!-- <h1>PREDICTION MASTER</h1> -->
+            <h4 style="padding-top: 40px;">Ok Bdg</h4>
+            <div class="owener-name">
+
+                <a class="PREDICTION-star" style="font-size: 20px;" href="https://t.me/ANJALI_TIPS_TOSS_0" target="_blank">👑PREDICTION MASTER👑</a>
+
+            </div>
+
+
+            <h3>NAMBAR PREDICTION 100% PROFIT</h3>
+
+            <div class="circle-container">
+                <div class="circle" id="minutes">11 minutes</div>
+                <div class="circle" id="seconds">45 seconds</div>
+            </div>
+
+
+            <div class="bottom-content">
+                <ul>
+                    <li class="list-menu"><span class="icon"> ▶️</span> 99% SINGLE SHOT⚡</li>
+                    <li class="list-menu"> <span class="icon"> ▶️</span> 100% WARKING HACK</li>
+                    <li class="list-menu"> <span class="icon">▶️</span> 3 YEARS EXPERIENCE☑️</li>
+                </ul>
+
+                <div class="telageram">
+                    <a href="https://t.me/ANJALI_TIPS_TOSS_0" target="_blank">
+                        JOIN NOW FOR FREE...
+                     <img src="image/telegram.webp" width="30px" height="30px" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+<script>
+    function startTimer(duration, displayMinutes, displaySeconds) {
+        let timer = duration,
+            minutes, seconds;
+
+        setInterval(function() {
+            minutes = Math.floor(timer / 60);
+            seconds = timer % 60;
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            displayMinutes.textContent = minutes + " minutes";
+            displaySeconds.textContent = seconds + " seconds";
+
+            if (--timer < 0) {
+                timer = 0;
+            }
+        }, 1000);
+    }
+
+    window.onload = function() {
+        let timeInSeconds = 25 * 60, // 25 minutes
+            displayMinutes = document.getElementById('minutes'),
+            displaySeconds = document.getElementById('seconds');
+
+        startTimer(timeInSeconds, displayMinutes, displaySeconds);
+    };
+</script>
+
+</html>
